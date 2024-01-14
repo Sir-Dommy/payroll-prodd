@@ -353,6 +353,13 @@ Route::get('leaverejects', function () {
     return View::make('leaveapplications.rejected', compact('leaveapplications'));
 
 });
+Route::get('leavescancelled', function () {
+
+    $leaveapplications = Leaveapplication::where('organization_id', Auth::user()->organization_id)->where('status', 'rejected')->get();
+
+    return View::make('leaveapplications.cancelled', compact('leaveapplications'));
+
+});
 Route::get('api/leavetypes', function () {
     $leavetypes = Leavetype::where('organization_id', Auth::user()->organization_id)->get();
     return $leavetypes->pluck('name', 'id');
