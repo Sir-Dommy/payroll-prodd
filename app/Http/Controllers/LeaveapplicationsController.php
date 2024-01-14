@@ -105,7 +105,7 @@ class LeaveapplicationsController extends Controller
 
         Leaveapplication::amendLeaveApplication($data, $id);
 
-        return Redirect::to('leavemgmt');
+        return Redirect::to('leaveamends');
     }
 
     /*
