@@ -150,7 +150,7 @@ class LeaveapplicationsController extends Controller
     {
 
         Leaveapplication::rejectLeaveApplication($id);
-        return Redirect::route('leaveapplications.index');
+        return Redirect::to('leaverejects');
 
     }
 
