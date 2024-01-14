@@ -21,7 +21,6 @@
                                         <th>Start Date</th>
                                         <th>End Date</th>
                                         <th>Leave Days</th>
-                                        <th></th>
                                     </tr>
                                     </thead>
                                     <tbody>
