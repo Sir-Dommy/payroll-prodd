@@ -25,14 +25,14 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    {{ $leaveapplications = App\models\Leaveapplication::all() }}
-                                    @forelse($leaveapplications as $leaveapplication)
+                                    
+                                    @forelse( App\models\Leaveapplication::all() as $leaveapplication)
                                         @if($leaveapplication->status == 'cancelled')
                                             <tr>
                                                 <td>{{$leaveapplication->employee->personal_file_number}}</td>
                                                 <td>{{$leaveapplication->employee->first_name." ".$leaveapplication->employee->last_name." ".$leaveapplication->employee->middle_name}}</td>
                                                 <td>{{$leaveapplication->leavetype->name}}</td>
-                                                <td>{{$leaveapplication->date_rejected}}</td>
+                                                <td>{{$leaveapplication->date_cancelled}}</td>
                                                 <td>{{$leaveapplication->applied_start_date}}</td>
                                                 <td>{{$leaveapplication->applied_end_date}}</td>
                                                 <td>{{App\models\Leaveapplication::getLeaveDays($leaveapplication->applied_end_date,$leaveapplication->applied_start_date)}}</td>
