@@ -141,7 +141,7 @@ class LeaveapplicationsController extends Controller
 
         Leaveapplication::approveLeaveApplication($data, $id);
 
-        return Redirect::route('leaveapplications.index');
+        return Redirect::route('leaveapprovals');
 
     }
 
