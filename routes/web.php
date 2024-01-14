@@ -257,7 +257,7 @@ Route::post('leaveapplications/update/{id}', [LeaveapplicationsController::class
 Route::get('leaveapplications/approve/{id}', [LeaveapplicationsController::class, 'approve']);
 Route::post('leaveapplications/approve/{id}', [LeaveapplicationsController::class, 'doapprove']);
 Route::get('leaveapplications/cancel/{id}', [LeaveapplicationsController::class, 'cancel']);
-//Route::get('leaveapplications/cancel/{id}', 'LeaveapplicationsController@cancel');
+Route::get('leaveapplications/cancel/{id}', 'LeaveapplicationsController@cancel');
 Route::get('leaveapplications/reject/{id}', [LeaveapplicationsController::class, 'reject']);
 Route::get('leaveapplications/show/{id}', [LeaveapplicationsController::class, 'show']);
 
