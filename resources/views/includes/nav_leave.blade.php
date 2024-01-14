@@ -32,6 +32,13 @@
                     </a>
                 </li>
                 <li class="">
+                    <a href="{{ url('leaverejects')}}" class="waves-effect waves-dark">
+                        <span class="pcoded-micon"><i class="feather icon-briefcase"></i></span>
+                        <span class="pcoded-mtext">Leaves Rejected</span>
+
+                    </a>
+                </li>
+                <li class="">
                     <a href="{{ url('leavetypes')}}" class="waves-effect waves-dark">
                         <span class="pcoded-micon"><i class="feather icon-briefcase"></i></span>
                         <span class="pcoded-mtext">Leave Types</span>
