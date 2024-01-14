@@ -17,7 +17,7 @@
                                         <th>Employee #</th>
                                         <th>Employee</th>
                                         <th>Leave Type</th>
-                                        <th>Rejection Date</th>
+                                        <th>Cancellation Date</th>
                                         <th>Start Date</th>
                                         <th>End Date</th>
                                         <th>Leave Days</th>
