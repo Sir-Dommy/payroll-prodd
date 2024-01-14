@@ -163,7 +163,7 @@
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="{{ url('leaveapplications/cancellations')}}" class="waves-effect waves-dark">
+                                    <a href="{{ url('leavescancelled')}}" class="waves-effect waves-dark">
                                         <span class="pcoded-micon"><i class="feather icon-briefcase"></i></span>
                                         <span class="pcoded-mtext">Leaves Cancelled</span>
                 
