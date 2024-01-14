@@ -36,9 +36,7 @@
                                                 <td>{{$leaveapplication->applied_start_date}}</td>
                                                 <td>{{$leaveapplication->applied_end_date}}</td>
                                                 <td>{{App\models\Leaveapplication::getLeaveDays($leaveapplication->applied_end_date,$leaveapplication->applied_start_date)}}</td>
-                                                <td>
-                                                    <a href="{{url('leaveapplications/edit/'.$leaveapplication->id)}}">Amend</a>
-                                                </td>
+                                                
                                             </tr>
                                         @endif
                                         @empty
