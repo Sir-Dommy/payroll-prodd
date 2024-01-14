@@ -25,6 +25,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    {{ $leaveapplications = Leaveapplication::all() }}
                                     @forelse($leaveapplications as $leaveapplication)
                                         @if($leaveapplication->status == 'cancelled')
                                             <tr>
